@@ -35,15 +35,15 @@ function getBpi(e) {
 
       if (selections == "usd") {
         // console.log(usdData.rate);
-        uiImage.setAttribute("src", "../img/usd.jpg");
+        uiImage.setAttribute("src", "img/usd.jpg");
         listItemUIUS.appendChild(uiImage);
         dataListItemUS.textContent = usdData.rate;
       } else if (selections == "eur") {
-        uiImage.setAttribute("src", "../img/euro.jpg");
+        uiImage.setAttribute("src", "img/euro.jpg");
         listItemUIEUR.appendChild(uiImage);
         dataListItemEU.textContent = eurData.rate;
       } else if (selections == "gbp") {
-        uiImage.setAttribute("src", "../img/gbp.jpg");
+        uiImage.setAttribute("src", "img/gbp.jpg");
         listItemUIGBP.appendChild(uiImage);
         dataListItemGB.textContent = gbpData.rate;
       } else {
