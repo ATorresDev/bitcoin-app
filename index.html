@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://pagecdn.io/lib/skeleton/2.0.4/skeleton.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bitcoin Price Index</title>
+  </head>
+  <body>
+    <div class="container br" id="contain">
+      <div class="container header">
+        <h4 class="logo">BitCoin.</h4>
+      </div>
+      <div class="container">
+        <div class="heading">
+          <h1>Bitcoin Price Index</h1>
+          <form>
+            <h5>Choose a currency :</h5>
+            <div>
+              <select class="u-full-width" name="currency" id="select-currency">
+                <option type="text" value="usd" id="usa">USD</option>
+                <option type="text" value="eur" id="eur">EUR</option>
+                <option type="text" value="gbp" id="gbp">GBP</option>
+              </select>
+            </div>
+            <input type="button" class="get-bpi" value="get bpi" />
+          </form>
+        </div>
+        <div class="currency-body">
+          <h5>BPI as of : <span class="update"></span></h5>
+          <ul class="get-currency">
+            <div class="list-item-us">
+              <h1>USD Currency</h1>
+              <!-- <img src="" class="us-img" /> -->
+              <li class="usd-info"></li>
+            </div>
+            <div class="list-item-eur">
+              <h1>EUR Currency</h1>
+              <!-- <img src="" class="eur-img" /> -->
+              <li class="eur-info"></li>
+            </div>
+            <div class="list-item-gbp">
+              <h1>GBP Currency</h1>
+              <!-- <img src="" class="gbp-img" /> -->
+              <li class="gbp-info"></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        <a target="_blank" href="https://github.com/ATorresDev"
+          >Made by Anthony Torres</a
+        >
+      </p>
+      <p>
+        <a target="_blank" href="https://www.coindesk.com/price/bitcoin"
+          >Powered by CoinDesk</a
+        >
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
